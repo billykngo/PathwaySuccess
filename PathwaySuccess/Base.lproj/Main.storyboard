@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iH8-fc-So0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="geH-nq-sMm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,23 +9,65 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
-        <scene sceneID="L96-HU-vZY">
+        <!--Register-->
+        <scene sceneID="tUl-oz-hDS">
             <objects>
-                <viewController id="iH8-fc-So0" customClass="LoginViewController" customModule="PathwaySuccess" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0hu-iz-Qqn" customClass="RegisterViewController" customModule="PathwaySuccess" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="b33-ht-8Wk"/>
-                        <viewControllerLayoutGuide type="bottom" id="chl-i7-wxE"/>
+                        <viewControllerLayoutGuide type="top" id="Vds-7I-jSY"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Uj-kt-6X6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cct-iF-uPT">
+                    <view key="view" contentMode="scaleToFill" id="ImB-2K-MhS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Register" image="registericon" id="uv7-6R-Hd6"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ybz-rd-qg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVa-vk-NTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="130"/>
+            <point key="canvasLocation" x="-618" y="197"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="r1Z-Zv-CvY">
+            <objects>
+                <viewController id="G6K-6q-hCc" customClass="LoginViewController" customModule="PathwaySuccess" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lrX-fE-Gns"/>
+                        <viewControllerLayoutGuide type="bottom" id="nPY-qg-LDE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ln3-br-bdN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Login" image="loginicon" id="LbS-5G-bSE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUf-AJ-9vW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618" y="-443"/>
+        </scene>
+        <!--Login Tab Bar Controller-->
+        <scene sceneID="0TP-KL-QFC">
+            <objects>
+                <tabBarController id="geH-nq-sMm" customClass="LoginTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="DeD-KD-pKZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="G6K-6q-hCc" kind="relationship" relationship="viewControllers" id="laA-2r-SYj"/>
+                        <segue destination="0hu-iz-Qqn" kind="relationship" relationship="viewControllers" id="TrC-vb-qFw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CW7-jY-pZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1407" y="-134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="loginicon" width="25" height="25"/>
+        <image name="registericon" width="25" height="25"/>
+    </resources>
 </document>

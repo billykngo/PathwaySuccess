@@ -12,8 +12,10 @@
 		9D209DDF1FCF4DD000B546D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DDD1FCF4DD000B546D7 /* Main.storyboard */; };
 		9D209DE11FCF4DD000B546D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DE01FCF4DD000B546D7 /* Assets.xcassets */; };
 		9D209DE41FCF4DD000B546D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DE21FCF4DD000B546D7 /* LaunchScreen.storyboard */; };
-		9D209DF41FCF669300B546D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D209DF31FCF669300B546D7 /* LoginViewController.swift */; };
 		9D209DF61FCF6D3C00B546D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DF51FCF6D3C00B546D7 /* GoogleService-Info.plist */; };
+		9D209DFA1FCF782E00B546D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D209DF91FCF782E00B546D7 /* LoginViewController.swift */; };
+		9D209DFC1FCF788B00B546D7 /* LoginTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D209DFB1FCF788B00B546D7 /* LoginTabBarController.swift */; };
+		9D209DFE1FCF79A800B546D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D209DFD1FCF79A800B546D7 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +27,10 @@
 		9D209DE01FCF4DD000B546D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D209DE31FCF4DD000B546D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D209DE51FCF4DD000B546D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D209DF31FCF669300B546D7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D209DF51FCF6D3C00B546D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D209DF91FCF782E00B546D7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D209DFB1FCF788B00B546D7 /* LoginTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTabBarController.swift; sourceTree = "<group>"; };
+		9D209DFD1FCF79A800B546D7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F2AE4B944465A32569E8B4FD /* Pods-PathwaySuccess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathwaySuccess.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PathwaySuccess/Pods-PathwaySuccess.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,10 +76,12 @@
 			isa = PBXGroup;
 			children = (
 				9D209DD91FCF4DD000B546D7 /* AppDelegate.swift */,
-				9D209DF31FCF669300B546D7 /* LoginViewController.swift */,
+				9D209DFB1FCF788B00B546D7 /* LoginTabBarController.swift */,
+				9D209DF91FCF782E00B546D7 /* LoginViewController.swift */,
+				9D209DFD1FCF79A800B546D7 /* RegisterViewController.swift */,
 				9D209DDD1FCF4DD000B546D7 /* Main.storyboard */,
-				9D209DE01FCF4DD000B546D7 /* Assets.xcassets */,
 				9D209DE21FCF4DD000B546D7 /* LaunchScreen.storyboard */,
+				9D209DE01FCF4DD000B546D7 /* Assets.xcassets */,
 				9D209DF51FCF6D3C00B546D7 /* GoogleService-Info.plist */,
 				9D209DE51FCF4DD000B546D7 /* Info.plist */,
 			);
@@ -227,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D209DF41FCF669300B546D7 /* LoginViewController.swift in Sources */,
+				9D209DFC1FCF788B00B546D7 /* LoginTabBarController.swift in Sources */,
+				9D209DFA1FCF782E00B546D7 /* LoginViewController.swift in Sources */,
 				9D209DDA1FCF4DD000B546D7 /* AppDelegate.swift in Sources */,
+				9D209DFE1FCF79A800B546D7 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
