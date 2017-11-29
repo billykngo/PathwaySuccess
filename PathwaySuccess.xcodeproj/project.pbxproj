@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		11CF078B787D93EC3DC5333B /* Pods_PathwaySuccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C3A3AABF6BB9F095809D77 /* Pods_PathwaySuccess.framework */; };
 		9D209DDA1FCF4DD000B546D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D209DD91FCF4DD000B546D7 /* AppDelegate.swift */; };
-		9D209DDC1FCF4DD000B546D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D209DDB1FCF4DD000B546D7 /* ViewController.swift */; };
 		9D209DDF1FCF4DD000B546D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DDD1FCF4DD000B546D7 /* Main.storyboard */; };
 		9D209DE11FCF4DD000B546D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DE01FCF4DD000B546D7 /* Assets.xcassets */; };
 		9D209DE41FCF4DD000B546D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DE21FCF4DD000B546D7 /* LaunchScreen.storyboard */; };
+		9D209DF41FCF669300B546D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D209DF31FCF669300B546D7 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +20,11 @@
 		50A58FCB4E53ACF5535A9F51 /* Pods-PathwaySuccess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathwaySuccess.release.xcconfig"; path = "Pods/Target Support Files/Pods-PathwaySuccess/Pods-PathwaySuccess.release.xcconfig"; sourceTree = "<group>"; };
 		9D209DD61FCF4DD000B546D7 /* PathwaySuccess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathwaySuccess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D209DD91FCF4DD000B546D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D209DDB1FCF4DD000B546D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D209DDE1FCF4DD000B546D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D209DE01FCF4DD000B546D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D209DE31FCF4DD000B546D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D209DE51FCF4DD000B546D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D209DF31FCF669300B546D7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F2AE4B944465A32569E8B4FD /* Pods-PathwaySuccess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathwaySuccess.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PathwaySuccess/Pods-PathwaySuccess.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				9D209DD91FCF4DD000B546D7 /* AppDelegate.swift */,
-				9D209DDB1FCF4DD000B546D7 /* ViewController.swift */,
+				9D209DF31FCF669300B546D7 /* LoginViewController.swift */,
 				9D209DDD1FCF4DD000B546D7 /* Main.storyboard */,
 				9D209DE01FCF4DD000B546D7 /* Assets.xcassets */,
 				9D209DE21FCF4DD000B546D7 /* LaunchScreen.storyboard */,
@@ -223,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D209DDC1FCF4DD000B546D7 /* ViewController.swift in Sources */,
+				9D209DF41FCF669300B546D7 /* LoginViewController.swift in Sources */,
 				9D209DDA1FCF4DD000B546D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +390,7 @@
 				9D209DEA1FCF4DD000B546D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
