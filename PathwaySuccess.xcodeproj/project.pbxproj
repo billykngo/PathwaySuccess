@@ -12,6 +12,7 @@
 		9D209DBF1FCF472A00B546D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DBD1FCF472A00B546D7 /* Main.storyboard */; };
 		9D209DC11FCF472A00B546D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DC01FCF472A00B546D7 /* Assets.xcassets */; };
 		9D209DC41FCF472A00B546D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DC21FCF472A00B546D7 /* LaunchScreen.storyboard */; };
+		9D209DCC1FCF4A7700B546D7 /* PathwaySuccess in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DCB1FCF4A7700B546D7 /* PathwaySuccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9D209DC01FCF472A00B546D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D209DC31FCF472A00B546D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D209DC51FCF472A00B546D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D209DCB1FCF4A7700B546D7 /* PathwaySuccess */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PathwaySuccess; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		9D209DAD1FCF472A00B546D7 = {
 			isa = PBXGroup;
 			children = (
+				9D209DCB1FCF4A7700B546D7 /* PathwaySuccess */,
 				9D209DB81FCF472A00B546D7 /* PathwaySuccess */,
 				9D209DB71FCF472A00B546D7 /* Products */,
 			);
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D209DC41FCF472A00B546D7 /* LaunchScreen.storyboard in Resources */,
+				9D209DCC1FCF4A7700B546D7 /* PathwaySuccess in Resources */,
 				9D209DC11FCF472A00B546D7 /* Assets.xcassets in Resources */,
 				9D209DBF1FCF472A00B546D7 /* Main.storyboard in Resources */,
 			);
@@ -301,6 +305,7 @@
 				9D209DCA1FCF472A00B546D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
