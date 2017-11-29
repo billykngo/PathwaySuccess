@@ -13,7 +13,6 @@
 		9D209DDF1FCF4DD000B546D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DDD1FCF4DD000B546D7 /* Main.storyboard */; };
 		9D209DE11FCF4DD000B546D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DE01FCF4DD000B546D7 /* Assets.xcassets */; };
 		9D209DE41FCF4DD000B546D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DE21FCF4DD000B546D7 /* LaunchScreen.storyboard */; };
-		9D209DEC1FCF597F00B546D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D209DEB1FCF597F00B546D7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +25,7 @@
 		9D209DE01FCF4DD000B546D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D209DE31FCF4DD000B546D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D209DE51FCF4DD000B546D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		F2AE4B944465A32569E8B4FD /* Pods-PathwaySuccess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathwaySuccess.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PathwaySuccess/Pods-PathwaySuccess.debug.xcconfig"; sourceTree = "<group>"; };
-=======
-		9D209DEB1FCF597F00B546D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
->>>>>>> e175c0227a6d84db7b5e98d4005b20aeed53e305
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +75,6 @@
 				9D209DE01FCF4DD000B546D7 /* Assets.xcassets */,
 				9D209DE21FCF4DD000B546D7 /* LaunchScreen.storyboard */,
 				9D209DE51FCF4DD000B546D7 /* Info.plist */,
-				9D209DEB1FCF597F00B546D7 /* GoogleService-Info.plist */,
 			);
 			path = PathwaySuccess;
 			sourceTree = "<group>";
@@ -157,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D209DE41FCF4DD000B546D7 /* LaunchScreen.storyboard in Resources */,
-				9D209DEC1FCF597F00B546D7 /* GoogleService-Info.plist in Resources */,
 				9D209DE11FCF4DD000B546D7 /* Assets.xcassets in Resources */,
 				9D209DDF1FCF4DD000B546D7 /* Main.storyboard in Resources */,
 			);
@@ -397,7 +390,6 @@
 				9D209DEA1FCF4DD000B546D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
