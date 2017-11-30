@@ -56,6 +56,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FM-t0-MYU">
                                 <rect key="frame" x="146" y="459" width="83" height="30"/>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerButton:" destination="0hu-iz-Qqn" eventType="touchUpInside" id="lIT-Xs-HO4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired Email :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuI-Nx-Deu">
                                 <rect key="frame" x="26" y="238" width="170" height="30"/>
@@ -90,6 +93,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Register" image="registericon" id="uv7-6R-Hd6"/>
+                    <connections>
+                        <outlet property="desiredEmail" destination="DeM-aW-ssI" id="SDE-jc-Tsy"/>
+                        <outlet property="desiredPassword" destination="Cud-Fj-AX1" id="16A-yq-IRg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVa-vk-NTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,6 +138,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u73-Yv-dwi">
                                 <rect key="frame" x="56" y="468" width="263" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="G6K-6q-hCc" eventType="touchUpInside" id="P5A-8l-d8R"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVv-y5-jHb">
                                 <rect key="frame" x="36" y="318" width="125" height="30"/>
@@ -175,6 +185,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Login" image="loginicon" id="LbS-5G-bSE"/>
+                    <connections>
+                        <outlet property="loginEmail" destination="6Wr-u1-GLb" id="G2W-o9-aec"/>
+                        <outlet property="loginPassword" destination="Aa9-Vl-YTl" id="I5U-q8-T2h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUf-AJ-9vW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

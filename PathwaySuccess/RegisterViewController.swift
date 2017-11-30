@@ -7,13 +7,32 @@
 //
 
 import UIKit
-import Firebase
 import FirebaseDatabase
 import FirebaseAuth
 
 class RegisterViewController: UIViewController {
     
     var ref: DatabaseReference!
+    
+    @IBOutlet weak var desiredEmail: UITextField!
+    @IBOutlet weak var desiredPassword: UITextField!
+    var alertController: UIAlertController? = nil
+    
+    @IBAction func registerButton(_ sender: Any) {
+        print("registered button")
+        if(desiredEmail.text == "" && desiredPassword.text == ""){
+            print("Authenticated")
+            Auth.auth().createUser(withEmail: (desiredEmail.text)!, password: (desiredPassword.text)!, completion: {(user, error) in
+                if error != nil {
+                    self.alertController = UIAlertController(title: "Incorrect Email or Password", message: "Make sure email comes with @ and password is more than 6 characters", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                }
+                else{
+                    self.performSegue(withIdentifier: "toHomePage", sender: self)
+                }
+            })
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

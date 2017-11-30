@@ -15,6 +15,13 @@ class LoginViewController: UIViewController {
 
     var ref: DatabaseReference!
     
+    @IBOutlet weak var loginEmail: UITextField!
+    @IBOutlet weak var loginPassword: UITextField!
+    
+    @IBAction func loginButton(_ sender: Any) {
+        print("logged in button")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
