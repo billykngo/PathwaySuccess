@@ -23,9 +23,12 @@ class LoginViewController: UIViewController {
         let userID = Auth.auth().currentUser?.uid
         
         if loginEmail.text != nil && loginPassword.text != nil {
-            Auth.auth().sighIn(withEmail: loginEmail.text, password: loginPassword.text, completion: {(user,error) in
+            Auth.auth().signIn(withEmail: loginEmail.text!, password: loginPassword.text!, completion: {(user,error) in
                 if error != nil {
                     print("test")
+                }
+                else{
+                    
                 }
             
             })
@@ -37,8 +40,8 @@ class LoginViewController: UIViewController {
         
         ref = Database.database().reference()
         
-        email.autocorrectionType = .no
-        password.autocorrectionType = .no
+        loginEmail.autocorrectionType = .no
+        loginPassword.autocorrectionType = .no
         // Do any additional setup after loading the view.
     }
 
