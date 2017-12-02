@@ -27,6 +27,7 @@ class RegisterViewController: UIViewController {
                     self.present(self.alertController!, animated: true, completion: nil)
                 }
                 else{
+                    let userID = Auth.auth().currentUser?.uid
                     self.performSegue(withIdentifier: "homepage", sender: self)
                 }
             })

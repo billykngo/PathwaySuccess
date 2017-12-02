@@ -20,11 +20,25 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         print("logged in button")
+        let userID = Auth.auth().currentUser?.uid
+        
+        if loginEmail.text != nil && loginPassword.text != nil {
+            Auth.auth().sighIn(withEmail: loginEmail.text, password: loginPassword.text, completion: {(user,error) in
+                if error != nil {
+                    
+                }
+            
+            })
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         ref = Database.database().reference()
+        
+        email.autocorrectionType = .no
+        password.autocorrectionType = .no
         // Do any additional setup after loading the view.
     }
 
