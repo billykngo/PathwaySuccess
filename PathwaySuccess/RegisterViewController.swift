@@ -19,16 +19,15 @@ class RegisterViewController: UIViewController {
     var alertController: UIAlertController? = nil
     
     @IBAction func registerButton(_ sender: Any) {
-        print("registered button")
-        if(desiredEmail.text == "" && desiredPassword.text == ""){
-            print("Authenticated")
-            Auth.auth().createUser(withEmail: (desiredEmail.text)!, password: (desiredPassword.text)!, completion: {(user, error) in
+        if(desiredEmail.text! != nil && desiredPassword.text! != nil){
+            Auth.auth().createUser(withEmail: desiredEmail.text!, password: desiredPassword.text as! String, completion: {(user, error) in
                 if error != nil {
                     self.alertController = UIAlertController(title: "Incorrect Email or Password", message: "Make sure email comes with @ and password is more than 6 characters", preferredStyle: UIAlertControllerStyle.alert)
-                    
+                    self.alertController?.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default))
+                    self.present(self.alertController!, animated: true, completion: nil)
                 }
                 else{
-                    self.performSegue(withIdentifier: "toHomePage", sender: self)
+                    self.performSegue(withIdentifier: "homepage", sender: self)
                 }
             })
         }
@@ -37,6 +36,9 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
+        
+        desiredEmail.autocorrectionType = .no
+        desiredPassword.autocorrectionType = .no
         // Do any additional setup after loading the view.
     }
 

@@ -58,6 +58,7 @@
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="registerButton:" destination="0hu-iz-Qqn" eventType="touchUpInside" id="lIT-Xs-HO4"/>
+                                    <segue destination="hDM-Vf-QY2" kind="show" identifier="homepage" id="JIC-wM-P0g"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired Email :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuI-Nx-Deu">
@@ -102,6 +103,25 @@
             </objects>
             <point key="canvasLocation" x="-618.39999999999998" y="189.3553223388306"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="kPG-Yw-j8k">
+            <objects>
+                <viewController storyboardIdentifier="homepage" id="KkO-yU-8Gc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ETq-60-CzE"/>
+                        <viewControllerLayoutGuide type="bottom" id="LVV-cC-Ve7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4mn-9I-EPA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vPZ-US-rzh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Crj-4Z-6zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="-89"/>
+        </scene>
         <!--Login-->
         <scene sceneID="r1Z-Zv-CvY">
             <objects>
@@ -140,6 +160,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButton:" destination="G6K-6q-hCc" eventType="touchUpInside" id="P5A-8l-d8R"/>
+                                    <segue destination="hDM-Vf-QY2" kind="show" id="y4c-JC-u2z"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVv-y5-jHb">
@@ -212,9 +233,30 @@
             </objects>
             <point key="canvasLocation" x="-1407" y="-134"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TdD-0v-GYq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hDM-Vf-QY2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eHq-UQ-xyu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KkO-yU-8Gc" kind="relationship" relationship="rootViewController" id="VUR-Xf-DV0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yal-fl-VT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="-88"/>
+        </scene>
     </scenes>
     <resources>
         <image name="loginicon" width="25" height="25"/>
         <image name="registericon" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="y4c-JC-u2z"/>
+    </inferredMetricsTieBreakers>
 </document>
