@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
         if loginEmail.text != nil && loginPassword.text != nil {
             Auth.auth().sighIn(withEmail: loginEmail.text, password: loginPassword.text, completion: {(user,error) in
                 if error != nil {
-                    
+                    print("test")
                 }
             
             })
