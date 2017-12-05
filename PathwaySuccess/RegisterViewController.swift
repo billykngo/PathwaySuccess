@@ -28,7 +28,13 @@ class RegisterViewController: UIViewController {
                 }
                 else{
                     let userID = Auth.auth().currentUser?.uid
-                    self.performSegue(withIdentifier: "homepage", sender: self)
+                    
+                    self.alertController = UIAlertController(title: "Account Created!", message: "Creation Successful", preferredStyle: UIAlertControllerStyle.alert)
+                    self.alertController?.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default))
+                    self.present(self.alertController!, animated: true, completion: nil)
+                    
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "homepage")
+                    self.present(vc!, animated: true, completion: nil)
                 }
             })
         }

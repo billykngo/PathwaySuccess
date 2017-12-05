@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginEmail: UITextField!
     @IBOutlet weak var loginPassword: UITextField!
+    var alertController: UIAlertController? = nil
     
     @IBAction func loginButton(_ sender: Any) {
         print("logged in button")
@@ -25,10 +26,13 @@ class LoginViewController: UIViewController {
         if loginEmail.text != nil && loginPassword.text != nil {
             Auth.auth().signIn(withEmail: loginEmail.text!, password: loginPassword.text!, completion: {(user,error) in
                 if error != nil {
-                    print("test")
+                    self.alertController = UIAlertController(title: "Incorrect Email or Password", message: "Make sure email comes with @ and password is more than 6 characters", preferredStyle: UIAlertControllerStyle.alert)
+                    self.alertController?.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default))
+                    self.present(self.alertController!, animated: true, completion: nil)
                 }
                 else{
-                    
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "homepage")
+                    self.present(vc!, animated: true, completion: nil)
                 }
             
             })
